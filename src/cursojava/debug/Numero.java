@@ -16,6 +16,10 @@ public class Numero {
 		this.n = n;
 	}
 	
+	public boolean isValido() {
+		return n>0;
+	}
+	
 	
 	public int valorDobro() {
 		int x;

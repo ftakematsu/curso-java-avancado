@@ -12,11 +12,13 @@ public class Main {
 		valorDigitado = JOptionPane.showInputDialog("Número");
 		
 		int x = Integer.parseInt(valorDigitado);
+
 		Numero num = new Numero(x);
 		
-		
-		System.out.println(num.valorDobro());
-		
+		if (num.isValido())
+			System.out.println(num.valorDobro());
+		else
+			System.out.println("Número inválido");
 	}
 
 }
